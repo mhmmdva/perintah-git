@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <!-- icons bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-color fixed-top align-items-center justify-content-center">
+    <ul class="nav align-items-center nav-logo">
+      <img src="/img/git.png" alt="">
+      <h1>PerintahGit</h1>
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/app/view/branch/gitBranches.html">Git Branch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/app/view/commit/gitCommit.html">Git Commit</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/app/view/merge/gitMerged.html">Git Merge</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/app/view/rebase/gitRebase.html">Git Rebase</a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- image github -->
+  <div class="git-design">
+    <div class="container git-design-bodys">
+    </div>
+  </div>
+
+  <!-- quotes semangat pak jokowi -->
+  <div class="quotes">
+    <div class="container quotes-body">
+      <h4 class="quotes-text text-muted">
+        &quot; <span class="lines">Bahasa bukan cuma Bahasa Inggris saja, bahasa <span class="quotes-b">coding</span>
+          ini lebih penting lagi ke depan</span> &quot;
+      </h4>
+      <span class="quotes-n">Jokowi, 13 Okt 2021 </span>
+    </div>
+  </div>
+
+  <div class="card container menu-wrapper">
+
+    <div class=" card-header card-font mt-3 sectionA" id="sectionA">
+      <ul class="nav nav-tabs card-header-tabs link-active">
+        <li class="nav-item"><a class="btn nav-link a-satu" href="#satu">Git Remote</a></li>
+        <li class="nav-item"><a class="btn active nav-link a-dua" href="#dua">Add</a></li>
+        <li class="nav-item"><a class="btn nav-link a-tiga" href="#tiga">Log</a></li>
+        <li class="nav-item"><a class="btn nav-link a-empat" href="#empat">Checkout</a></li>
+        <li class="nav-item"><a class="btn nav-link a-lima" href="#lima">Remote</a></li>
+        <li class="nav-item"><a class="btn nav-link a-enam" href="#enam">Basic Command</a></li>
+      </ul>
+    </div>
+
+    <div class="card-body mt-2 mb-3 card" id="sectionA">
+      <div class="card-text p-dua">
+        <ul class="ul-dua">
+          <li>
+            <strong> git add (nama_file.html) = </strong> untuk memindahkan file yang akan di commit ke staging
+          </li>
+          <li>
+            <strong>git add . (tanda_titik) = </strong> untuk memindahkan file yang akan di commit ke staging area
+            secara langsung seperti ada penambahakan file baru atau perubahan codes area
+          </li>
+        </ul>
+      </div>
+
+      <div class="card-text p-tiga">
+        <ul class="ul-tiga">
+          <li><strong> git log -- index.html : </strong> melihat history perubahan secara spesifik pada file index.html
+            saja</li>
+          <li><strong> git log : melihat history pada commit</strong> git log -3 : melihat history
+            pada commit sebanyak 3x saja</li>
+          <li><strong> git log --all --decorate --oneline --graph : </strong> untuk melihat graph pada branch dengan
+            commit hash dan ada commit massages</li>
+          <li><strong>alias graph="git log --all --decorate --oneline --graph"</strong> untuk membuat suatu alias</li>
+        </ul>
+      </div>
+
+      <div class="card-text p-empat">
+        <ul class="ul-empat">
+          <li><strong>git checkout 7767bsq -- index.html : </strong> mengembalikan file yang sudah kita hapus
+            dengan memasukkan code commit pertama (7767bsq) sebannyak 7 digit dan file yang sudah dikembalikan akan
+            masuk ke dalam staging area.</li>
+          <li><strong>git checkout (nama_branch): </strong> untuk berpindah branch aktif bernama master ke branch
+            yang lain</li>
+          <li><strong>git checkout -b (nama_branch): </strong> membuat branch sekaligus untuk mengaktifkan branch
+            tersebut</li>
+        </ul>
+      </div>
+
+      <div class="card-text p-lima">
+        <ul class="ul-lima">
+          <li><strong>git remote : </strong> ketika mau ngeremote, maka remote harus punya nama dan secara otomatis
+            nama default dari remote adalah origin</li>
+          <li><strong>git remote -v </strong> melihat data lebih detail tidak hanya nama remote</li>
+          <li><strong>git remote add origin (url_git) : </strong> untuk membuat remote baru karena di awal membuat
+            folder pada dekstop bukan pada github dan pada bagian README.file itu jangan di checklist</li>
+        </ul>
+      </div>
+
+      <div class="card-text p-enam">
+        <ul class="ul-">
+          <li><strong>cd (nama_folder) : </strong> change directory , untuk melakukan perpindahan atau memasuki
+            pada suatu folder yang di inginkan</li>
+          <li><strong>git init : </strong> untuk menginisialisasi, dengan cara membuat repositori pada file local
+            sehingga menjadi master</li>
+          <li><strong>git status : </strong> untuk melihat status informasi pada git, apakah ada yang diperbaharui
+            atau tidak</li>
+          <li><strong>untracked files : </strong> ada penambahan file baru yang harus kita pindahkan ke dalam
+            staging area</li>
+          <li><strong>git clone (url_git_folder)" : </strong> untuk mengclone folder dari github, dan jika download
+            maka kita tidak terhubung ke remote</li>
+          <li><strong>git push -u origin master : </strong>-u untuk mengeset upstream, jadi ketika kedepannya ingin
+            push lagi tinggal mengetik git push saja</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+
+      <div class="row-column">
+
+        <div class="footer-logo">
+          <img class="footer-img" src="/img/git.png" alt="">
+          <h1>PerintahGit</h1>
+        </div>
+
+        <div class="footer-column">
+
+          <div class="footer-info">
+
+            <ul class="social-media">
+              <li class="social-items"><a href=""><i class="bi bi-github"></i></a></li>
+              <li class="social-items"><a href=""><i class="bi bi-instagram"></i></a></li>
+              <li class="social-items"><a href=""><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="categories-flex">
+            <h6 class="text-footer">Categories</h6>
+            <ul>
+              <li class="mb-2"><a href="#">Home</a></li>
+              <li class="mb-2"><a href="#">About</a></li>
+            </ul>
+          </div>
+
+          <div class="categories-flex">
+            <h6 class="text-footer">Rules of Git</h6>
+            <ul>
+              <li class="mb-2"><a href="#">Git Branch</a></li>
+              <li class="mb-2"><a href="#">Git Commit</a></li>
+              <li class="mb-2"><a href="#">Git Merge</a></li>
+              <li class="mb-2"><a href="#">Git Rebase</a></li>
+            </ul>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div> <!-- ROW COLUMN-->
+      <!-- Copyrights -->
+
+      <div class="copyrights">
+        <div class="d-flex align-content-center justify-content-center copyText">
+          <p class="text-muted mb-2 py-2">© 2022 PerintahGit.</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- End -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
+
+  <script src="../app/core/function.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
