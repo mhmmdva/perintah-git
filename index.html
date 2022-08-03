@@ -144,6 +144,173 @@
   <br><br><br>
 
 
+  <!-- untuk git commit -->
+  <!-- <div class="gitBoxes">
+    <div class="container">
+
+      <article class="card">
+        <section class="cards-body">
+          <h2>Materi Git Commit!</h2>
+          <p class="cardstxt"> <span>git config --global user.name "mhmmdva" </span> </p>
+          <p class="cardstxt"> <span>git config --global user.email "vallenleyss@gmail.com" </span>
+          <p> <span> git commit -a -m (-am) "komentar untuk pemberian history" </span>
+            jika suatu file sudah modified pada saat pengecekan status, maka kita bisa langsung
+            memasukkkan perintah seperti itu untuk mempercepat pekerjaan dengan artian -a untuk menambahkan
+            dan -m untuk commit </p>
+          <p> <span> git commit : </span> Sebelum melakukkan commit , kita harus config atau menjelaskan siapa diri
+            kita ke dalam Git dengan menggunakan perintah :
+          </p>
+
+          </p>
+          <p><span>git commit -m </span>"komentar untuk pemberian history"
+            untuk melakukan commit atau menentukan bahwa code yang sudah kita buat itu akan dimasukkan ke dalam
+            git
+          </p>
+        </section>
+      </article>
+
+    </div>
+  </div> -->
+
+
+
+  <!-- untuk bagian git merge -->
+  <!--   
+  <div class="gitBoxes">
+    <div class="container">
+
+      <article class="card">
+        <section class="cards-body">
+          <h2>Materi Git Merged!</h2>
+
+          <ul>
+            <h3>Fast Forward Merged</h3>
+            <li>
+              <p>untuk melakukan merge pada branch, yaitu kita harus pindah terlebih dahulu ke dalam branch master
+                setelah pindah ke dalam branch master maka kita bisa melakukan git merge (nama_branch), ini untuk
+                melakukan fast forward </p>
+            </li>
+            <li>
+              <p>dan untuk menghapus branch nya karena sudah di merge sebelumnya,
+                kita bisa menggunakan perintah </p>
+            </li>
+            <li>
+              <p>git branch --merged : yaitu git akan secara otomatis menghapus branch yang sudah di merge tetapi
+                posisi kita harus berada di dalam branch master </p>
+            </li>
+
+            <li>
+              <p> git branch -d (nama_branch) : untuk menghapus branch setelah di merged </p>
+            </li>
+
+            <li>
+              <p> git branch -D (nama_branch) : menghapus branch secara paksa tanpa adanya merge dengan alasan file
+                yang dibuat itu tidak terpakai </p>
+            </li>
+
+          </ul>
+        </section>
+
+        <section class="cards-body">
+          <h3>Three-way Merged</h3>
+          <ul>
+            <li>
+              <p>ini adalah sebuah branch yang akan terjadi ketika, branch satu
+                dengan branch yang lain itu tidak memiliki hubungan satu sama lain
+              </p>
+            </li>
+            <li>
+              <p>git branch --merged : yaitu git akan secara otomatis menghapus branch yang sudah di merge tetapi
+                posisi kita harus berada di dalam branch master </p>
+            </li>
+            <li>
+              <p>git branch -d (nama_branch) : untuk menghapus branch setelah di merged </p>
+            </li>
+            <ul>
+        </section>
+
+        <section class="cards-body">
+          <h3>Conflict Merged</h3>
+          <ul>
+            <li>
+              <p> jika pada satu file ada yang mengubah atau mengganti isi dari codes tersebut yang menyebabkan
+                error/conflict pada saat di commit, itu mengharus kan kita sebagai developer untuk memilih mana yang
+                akan kita gunakan.</p>
+
+              <p>
+                HEAD CURRENT : jika ada hal seperti ini, berarti ini menandakan file yang aktif yang sedang di
+                modifikasi nama_branch (incoming change) : jika ada hal seperti ini, berarti ini adalah file yang
+                sebelumnya sudah di modifikasi terlebih dahulu
+              </p>
+            </li>
+            <h3>Resolve conflict Merged</h3>
+            <li>
+              <p>
+                dengan cara memilih codes atau baris mana yang ingin kita pakai dan kita hapus, jika sudah maka save.
+                Dan masuk ke dalam git status untuk melihat status nya
+              </p>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+    </div>
+  </div> -->
+
+
+  <!-- untuk bagian git branch -->
+  <!-- <div class="gitBoxes">
+  <div class="container">
+
+    <article class="card">
+      <section class="cards-body">
+        <h2>Materi Git Branch</h2>
+        <p><span>HEAD -> </span>
+          jika ada head di dalam graph pada git, itu menandakan bahwa branch tersebut lah yang sedang aktif
+          atau branch tersebut sedang kita gunakan</p>
+        <p><span>git branch (nama_branch) :</span>
+          untuk membuat branch baru pada git</p>
+        <p><span>git branch : </span>
+          untuk mengecek branch apa saja yang kita miliki</p>
+        <p><span>git branch (nama_branch) :</span>
+          untuk membuat branch baru pada git</p>
+      </section>
+    </article>
+
+  </div>
+</div> -->
+
+
+  <!-- git rebase -->
+  <!-- <div class="gitBoxes">
+    <div class="container">
+      <div class="card">
+        <div class="cards-body">
+          <h1>Perintah Rebase</h1>
+          <p>Rebase ini adalah suatu perintah untuk mensejajarkan branch lain dengan branch master,
+            dan fungsinya ini adalah untuk menghindari adanya Three-way atau conflict pada git
+            saat ingin melakukan push.
+          </p>
+          <p>jika ingin melakukan rebase ini, maka kita harus melihat terlebih dahulu pada graph
+            apakah branch yang sudah kita buat ingin kita lakukan rebase agar terjadinya fast-forward
+            untuk menghindari adanya conflict
+          </p>
+          <ul>
+            <li>git checkout (nama_branch_lain) </li>
+            <li>git rebase (nama_branch_master)</li>
+            <li>graph</li>
+            <li>git checkout (nama_branch_master)</li>
+            <li>git rebase (nama_branch_lain)</li>
+            <li>graph</li>
+            <li>git push -u origin master</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
 
   <!-- Footer -->
   <footer>
@@ -213,9 +380,8 @@
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
     crossorigin="anonymous"></script>
-
-  <script src="../app/core/function.js"></script>
   <script src="./js/script.js"></script>
+
 </body>
 
 </html>
