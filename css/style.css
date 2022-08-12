@@ -168,7 +168,7 @@ body {
 }
 
 .git-design {
-  background: url("./img/GitHub.png");
+  background: url("/img/GitHub.png");
   background-size: cover;
   height: 540px;
   position: relative;
