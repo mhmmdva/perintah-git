@@ -167,10 +167,10 @@ body {
   height: auto;
 }
 
-.git-design {
-  background: url("/img/GitHub.png");
+.git-design img {
   background-size: cover;
-  height: 540px;
+  width: 100%;
+  height: auto;
   position: relative;
 }
 
