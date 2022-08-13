@@ -250,12 +250,14 @@ p {
   font-size: 16px;
 }
 
-#sectionA .ul-satu,
-.ul-dua,
+#sectionA .ul-dua,
 .ul-tiga,
 .ul-empat,
 .ul-lima,
-.ul-enam {
+.ul-enam,
+.ul-tujuh,
+.ul-delapan,
+.ul-sembilan {
   display: none;
 }
 

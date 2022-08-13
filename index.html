@@ -29,7 +29,7 @@
         <a class="nav-link" href="/index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Git Branch</a>
+        <a class="nav-link" href="#satu">Git Branch</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Git Commit</a>
@@ -64,64 +64,35 @@
 
     <div class=" card-header card-font mt-3 sectionA" id="sectionA">
       <ul class="nav nav-tabs card-header-tabs link-active">
-        <li class="nav-item"><a class="btn nav-link a-satu" href="#satu">Git Remote</a></li>
-        <li class="nav-item"><a class="btn active nav-link a-dua" href="#dua">Add</a></li>
+        <li class="nav-item"><a class="btn nav-link a-satu active" href="#satu">Basic Command</a></li>
+        <li class="nav-item"><a class="btn nav-link a-dua" href="#dua">Add</a></li>
         <li class="nav-item"><a class="btn nav-link a-tiga" href="#tiga">Log</a></li>
         <li class="nav-item"><a class="btn nav-link a-empat" href="#empat">Checkout</a></li>
-        <li class="nav-item"><a class="btn nav-link a-lima" href="#lima">Remote</a></li>
-        <li class="nav-item"><a class="btn nav-link a-enam" href="#enam">Basic Command</a></li>
+        <li class="nav-item"><a class="btn nav-link a-lima" href="#lima">Git Remote</a></li>
+        <li class="nav-item"><a class="btn nav-link a-enam" href="#enam">Git Branch</a></li>
+        <li class="nav-item"><a class="btn nav-link a-tujuh" href="#tujuh">Git Commit</a></li>
+        <li class="nav-item"><a class="btn nav-link a-delapan" href="#delapan">Git Merge</a></li>
+        <li class="nav-item"><a class="btn nav-link a-sembilan" href="#sembilan">Git Rebase</a></li>
       </ul>
     </div>
 
     <div class="card-body mt-2 mb-3 card" id="sectionA">
+      <div class="card-text p-satu">
+        <ul class="ul-satu">
+          <h3>Clone Folder in Github</h3>
+          <li><strong>cd (nama_folder) : </strong> change directory , untuk melakukan perpindahan atau memasuki
+            pada suatu folder yang di inginkan</li>
+          <h3>Create New Folder</h1>
+            <li><strong>cd (nama_folder) : </strong> change directory , untuk melakukan perpindahan atau memasuki
+              pada suatu folder yang di inginkan</li>
+        </ul>
+      </div>
+      <hr>
+
+
+
       <div class="card-text p-dua">
         <ul class="ul-dua">
-          <li>
-            <strong> git add (nama_file.html) = </strong> untuk memindahkan file yang akan di commit ke staging
-          </li>
-          <li>
-            <strong>git add . (tanda_titik) = </strong> untuk memindahkan file yang akan di commit ke staging area
-            secara langsung seperti ada penambahakan file baru atau perubahan codes area
-          </li>
-        </ul>
-      </div>
-
-      <div class="card-text p-tiga">
-        <ul class="ul-tiga">
-          <li><strong> git log -- index.html : </strong> melihat history perubahan secara spesifik pada file index.html
-            saja</li>
-          <li><strong> git log : melihat history pada commit</strong> git log -3 : melihat history
-            pada commit sebanyak 3x saja</li>
-          <li><strong> git log --all --decorate --oneline --graph : </strong> untuk melihat graph pada branch dengan
-            commit hash dan ada commit massages</li>
-          <li><strong>alias graph="git log --all --decorate --oneline --graph"</strong> untuk membuat suatu alias</li>
-        </ul>
-      </div>
-
-      <div class="card-text p-empat">
-        <ul class="ul-empat">
-          <li><strong>git checkout 7767bsq -- index.html : </strong> mengembalikan file yang sudah kita hapus
-            dengan memasukkan code commit pertama (7767bsq) sebannyak 7 digit dan file yang sudah dikembalikan akan
-            masuk ke dalam staging area.</li>
-          <li><strong>git checkout (nama_branch): </strong> untuk berpindah branch aktif bernama master ke branch
-            yang lain</li>
-          <li><strong>git checkout -b (nama_branch): </strong> membuat branch sekaligus untuk mengaktifkan branch
-            tersebut</li>
-        </ul>
-      </div>
-
-      <div class="card-text p-lima">
-        <ul class="ul-lima">
-          <li><strong>git remote : </strong> ketika mau ngeremote, maka remote harus punya nama dan secara otomatis
-            nama default dari remote adalah origin</li>
-          <li><strong>git remote -v </strong> melihat data lebih detail tidak hanya nama remote</li>
-          <li><strong>git remote add origin (url_git) : </strong> untuk membuat remote baru karena di awal membuat
-            folder pada dekstop bukan pada github dan pada bagian README.file itu jangan di checklist</li>
-        </ul>
-      </div>
-
-      <div class="card-text p-enam">
-        <ul class="ul-">
           <li><strong>cd (nama_folder) : </strong> change directory , untuk melakukan perpindahan atau memasuki
             pada suatu folder yang di inginkan</li>
           <li><strong>git init : </strong> untuk menginisialisasi, dengan cara membuat repositori pada file local
@@ -134,6 +105,72 @@
             maka kita tidak terhubung ke remote</li>
           <li><strong>git push -u origin master : </strong>-u untuk mengeset upstream, jadi ketika kedepannya ingin
             push lagi tinggal mengetik git push saja</li>
+        </ul>
+      </div>
+
+
+      <div class="card-text p-tiga">
+        <ul class="ul-tiga">
+          <li>
+            <strong> git add (nama_file.html) = </strong> untuk memindahkan file yang akan di commit ke staging
+          </li>
+          <li>
+            <strong>git add . (tanda_titik) = </strong> untuk memindahkan file yang akan di commit ke staging area
+            secara langsung seperti ada penambahakan file baru atau perubahan codes area
+          </li>
+        </ul>
+      </div>
+
+      <div class="card-text p-empat">
+        <ul class="ul-empat">
+          <li><strong> git log -- index.html : </strong> melihat history perubahan secara spesifik pada file index.html
+            saja</li>
+          <li><strong> git log : melihat history pada commit</strong> git log -3 : melihat history
+            pada commit sebanyak 3x saja</li>
+          <li><strong> git log --all --decorate --oneline --graph : </strong> untuk melihat graph pada branch dengan
+            commit hash dan ada commit massages</li>
+          <li><strong>alias graph="git log --all --decorate --oneline --graph"</strong> untuk membuat suatu alias</li>
+        </ul>
+      </div>
+
+      <div class="card-text p-lima">
+        <ul class="ul-lima">
+          <li><strong>git checkout 7767bsq -- index.html : </strong> mengembalikan file yang sudah kita hapus
+            dengan memasukkan code commit pertama (7767bsq) sebannyak 7 digit dan file yang sudah dikembalikan akan
+            masuk ke dalam staging area.</li>
+          <li><strong>git checkout (nama_branch): </strong> untuk berpindah branch aktif bernama master ke branch
+            yang lain</li>
+          <li><strong>git checkout -b (nama_branch): </strong> membuat branch sekaligus untuk mengaktifkan branch
+            tersebut</li>
+        </ul>
+      </div>
+
+      <div class="card-text p-enam">
+        <ul class="ul-enam">
+          <li><strong>git remote : </strong> ketika mau ngeremote, maka remote harus punya nama dan secara otomatis
+            nama default dari remote adalah origin</li>
+          <li><strong>git remote -v </strong> melihat data lebih detail tidak hanya nama remote</li>
+          <li><strong>git remote add origin (url_git) : </strong> untuk membuat remote baru karena di awal membuat
+            folder pada dekstop bukan pada github dan pada bagian README.file itu jangan di checklist</li>
+        </ul>
+      </div>
+
+
+      <div class="card-text p-tujuh">
+        <ul class="ul-tujuh">
+          <h3>commit</h3>
+        </ul>
+      </div>
+
+      <div class="card-text p-delapan">
+        <ul class="ul-delapan">
+          <h3>merge</h3>
+        </ul>
+      </div>
+
+      <div class="card-text p-sembilan">
+        <ul class="ul-sembilan">
+          <h3>rebase</h3>
         </ul>
       </div>
 
