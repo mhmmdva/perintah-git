@@ -107,11 +107,6 @@ section {
   display: block;
 }
 
-ol,
-ul {
-  list-style: none;
-}
-
 blockquote,
 q {
   quotes: none;
@@ -134,10 +129,33 @@ table {
   box-sizing: border-box;
 }
 
+/* 
+font-family: 'Averia Serif Libre', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'DynaPuff', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif; */
+
+:root {
+  --warna-merah: #F05033;
+  --warna-putih: #fdfdfd;
+  --warna-biru: #0276e2;
+  --warna-abu: #bbbbbb;
+  --warna-hijau: rgba(97, 199, 165, 0.288);
+  --warna-bg-Code: #ece9e9;
+  --body-fonts: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --text-judul-h2: 'Montserrat', sans-serif;
+  --text-code: 'Inconsolata', monospace;
+}
+
 body {
   line-height: 1.5;
   background-color: rgb(255, 255, 255);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--warna-putih);
+  font-family: var(--body-fonts);
 }
 
 .container {
@@ -148,16 +166,31 @@ body {
 }
 
 .navbar-color {
-  background-color: white;
-  border-bottom: 6px solid #e91e63;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 6px solid #F05033;
+
+  background-color: var(--warna-putih);
+  border-bottom: 6px solid var(--warna-merah);
 }
 
+.navbar {
+  font-family: var(--body-fonts);
+}
 
+/* .nav .nav-item a.nav-link {
+  font-size: 18px;
+  width: 100px;
+  text-align: center;
+  color: black;
+  margin: 0 10px;
+  padding: 0;
+} */
 
-.nav a:hover {
-  color: #e91e63;
+.nav .nav-item a.nav-link:hover {
+  color: #F05033;
+  transition: ease 0.3s;
   font-weight: 600;
-  border-bottom: 2px solid rgb(2, 118, 226);
+  color: var(--warna-merah);
 }
 
 .nav-logo img {
@@ -167,28 +200,15 @@ body {
   height: auto;
 }
 
+.nav-logo h1 {
+  margin-right: 30px;
+}
+
 .git-design img {
   background-size: cover;
   width: 100%;
   height: auto;
   position: relative;
-}
-
-
-
-h4 {
-  font-size: 18px;
-
-}
-
-p {
-  margin-left: 20px;
-  text-align: justify;
-}
-
-.gitBoxes {
-  margin-bottom: 80px;
-  margin-top: 40px;
 }
 
 
@@ -202,27 +222,36 @@ p {
 
 .quotes-body .quotes-text {
   font-size: 26px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
+
+  font-family: var(--body-fonts);
 }
 
 .quotes-body .quotes-b {
   color: #e91e63;
   font-weight: 600;
+
+  color: var(--warna-merah);
 }
 
 .quotes-body .quotes-n {
   color: #bbbbbb;
   font-style: italic;
+
+  color: var(--warna-abu);
 }
 
 .lines {
   border-bottom: 4px solid rgba(97, 199, 165, 0.288);
+
+  border-bottom: 4px solid var(--warna-hijau);
 }
 
 .list-inline-item,
 .bi:hover {
   color: #e91e63;
+
+  color: var(--warna-merah);
 }
 
 
@@ -243,23 +272,76 @@ p {
 }
 
 .menu-wrapper .sectionA .link-active li:hover {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
+
+  background-color: var(--warna-bg-Code);
 }
 
 .card-font {
   font-size: 16px;
 }
 
-#sectionA .ul-dua,
-.ul-tiga,
-.ul-empat,
-.ul-lima,
-.ul-enam,
-.ul-tujuh,
-.ul-delapan,
-.ul-sembilan {
+#sectionA .card-text .p-dua,
+.p-tiga,
+.p-empat,
+.p-lima,
+.p-enam,
+.p-tujuh,
+.p-delapan,
+.p-sembilan {
   display: none;
 }
+
+
+.section-a ul li {
+  margin: 8px 20px;
+  list-style-type: disc;
+}
+
+#sectionA .ul-satu .code {
+  background-color: #ece9e9;
+  border-radius: 8px;
+  font-weight: 800;
+  font-family: 'Inconsolata', monospace;
+  color: #F05033;
+  padding: 4px;
+
+  background-color: var(--warna-bg-Code);
+  color: var(--warna-merah);
+  font-family: var(--text-code);
+}
+
+#sectionA .text-judul {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F05033;
+  color: rgb(255, 255, 255);
+  width: 38%;
+  padding-left: 8px;
+  border-radius: 8px;
+  margin: 20px 0;
+
+  background-color: var(--warna-merah);
+  color: var(--warna-putih);
+  font-family: var(--text-judul-h2);
+}
+
+#sectionA .text-judul-dua {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F05033;
+  color: rgb(255, 255, 255);
+  width: 20%;
+  padding-left: 8px;
+  border-radius: 8px;
+  margin: 20px 0;
+
+  background-color: var(--warna-merah);
+  color: var(--warna-putih);
+  font-family: var(--text-judul-h2);
+}
+
+
 
 
 footer {

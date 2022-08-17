@@ -18,6 +18,13 @@
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- icons bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Bungee+Shade&family=Cinzel&family=Cinzel+Decorative&family=DynaPuff&family=Inconsolata&family=Montserrat&display=swap"
+    rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -60,8 +67,15 @@
     </div>
   </div>
 
-  <div class="card container menu-wrapper">
 
+
+
+
+
+
+
+
+  <div class="card container menu-wrapper">
     <div class=" card-header card-font mt-3 sectionA" id="sectionA">
       <ul class="nav nav-tabs card-header-tabs link-active">
         <li class="nav-item"><a class="btn nav-link a-satu active" href="#satu">Basic Command</a></li>
@@ -75,300 +89,315 @@
         <li class="nav-item"><a class="btn nav-link a-sembilan" href="#sembilan">Git Rebase</a></li>
       </ul>
     </div>
+    <!-- akhir dari nav-materi -->
+
 
     <div class="card-body mt-2 mb-3 card" id="sectionA">
-      <div class="card-text p-satu">
-        <ul class="ul-satu">
-          <h3>Clone Folder in Github</h3>
-          <li><strong>cd (nama_folder) : </strong> change directory , untuk melakukan perpindahan atau memasuki
-            pada suatu folder yang di inginkan</li>
-          <h3>Create New Folder</h1>
-            <li><strong>cd (nama_folder) : </strong> change directory , untuk melakukan perpindahan atau memasuki
-              pada suatu folder yang di inginkan</li>
-        </ul>
-      </div>
-      <hr>
-
-
-
-      <div class="card-text p-dua">
-        <ul class="ul-dua">
-          <li><strong>cd (nama_folder) : </strong> change directory , untuk melakukan perpindahan atau memasuki
-            pada suatu folder yang di inginkan</li>
-          <li><strong>git init : </strong> untuk menginisialisasi, dengan cara membuat repositori pada file local
-            sehingga menjadi master</li>
-          <li><strong>git status : </strong> untuk melihat status informasi pada git, apakah ada yang diperbaharui
-            atau tidak</li>
-          <li><strong>untracked files : </strong> ada penambahan file baru yang harus kita pindahkan ke dalam
-            staging area</li>
-          <li><strong>git clone (url_git_folder)" : </strong> untuk mengclone folder dari github, dan jika download
-            maka kita tidak terhubung ke remote</li>
-          <li><strong>git push -u origin master : </strong>-u untuk mengeset upstream, jadi ketika kedepannya ingin
-            push lagi tinggal mengetik git push saja</li>
-        </ul>
-      </div>
-
-
-      <div class="card-text p-tiga">
-        <ul class="ul-tiga">
-          <li>
-            <strong> git add (nama_file.html) = </strong> untuk memindahkan file yang akan di commit ke staging
-          </li>
-          <li>
-            <strong>git add . (tanda_titik) = </strong> untuk memindahkan file yang akan di commit ke staging area
-            secara langsung seperti ada penambahakan file baru atau perubahan codes area
-          </li>
-        </ul>
-      </div>
-
-      <div class="card-text p-empat">
-        <ul class="ul-empat">
-          <li><strong> git log -- index.html : </strong> melihat history perubahan secara spesifik pada file index.html
-            saja</li>
-          <li><strong> git log : melihat history pada commit</strong> git log -3 : melihat history
-            pada commit sebanyak 3x saja</li>
-          <li><strong> git log --all --decorate --oneline --graph : </strong> untuk melihat graph pada branch dengan
-            commit hash dan ada commit massages</li>
-          <li><strong>alias graph="git log --all --decorate --oneline --graph"</strong> untuk membuat suatu alias</li>
-        </ul>
-      </div>
-
-      <div class="card-text p-lima">
-        <ul class="ul-lima">
-          <li><strong>git checkout 7767bsq -- index.html : </strong> mengembalikan file yang sudah kita hapus
-            dengan memasukkan code commit pertama (7767bsq) sebannyak 7 digit dan file yang sudah dikembalikan akan
-            masuk ke dalam staging area.</li>
-          <li><strong>git checkout (nama_branch): </strong> untuk berpindah branch aktif bernama master ke branch
-            yang lain</li>
-          <li><strong>git checkout -b (nama_branch): </strong> membuat branch sekaligus untuk mengaktifkan branch
-            tersebut</li>
-        </ul>
-      </div>
-
-      <div class="card-text p-enam">
-        <ul class="ul-enam">
-          <li><strong>git remote : </strong> ketika mau ngeremote, maka remote harus punya nama dan secara otomatis
-            nama default dari remote adalah origin</li>
-          <li><strong>git remote -v </strong> melihat data lebih detail tidak hanya nama remote</li>
-          <li><strong>git remote add origin (url_git) : </strong> untuk membuat remote baru karena di awal membuat
-            folder pada dekstop bukan pada github dan pada bagian README.file itu jangan di checklist</li>
-        </ul>
-      </div>
-
-
-      <div class="card-text p-tujuh">
-        <ul class="ul-tujuh">
-          <h3>commit</h3>
-        </ul>
-      </div>
-
-      <div class="card-text p-delapan">
-        <ul class="ul-delapan">
-          <h3>merge</h3>
-        </ul>
-      </div>
-
-      <div class="card-text p-sembilan">
-        <ul class="ul-sembilan">
-          <h3>rebase</h3>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-
-  <br><br><br>
-
-
-  <!-- untuk git commit -->
-  <!-- <div class="gitBoxes">
-    <div class="container">
-
-      <article class="card">
-        <section class="cards-body">
-          <h2>Materi Git Commit!</h2>
-          <p class="cardstxt"> <span>git config --global user.name "mhmmdva" </span> </p>
-          <p class="cardstxt"> <span>git config --global user.email "vallenleyss@gmail.com" </span>
-          <p> <span> git commit -a -m (-am) "komentar untuk pemberian history" </span>
-            jika suatu file sudah modified pada saat pengecekan status, maka kita bisa langsung
-            memasukkkan perintah seperti itu untuk mempercepat pekerjaan dengan artian -a untuk menambahkan
-            dan -m untuk commit </p>
-          <p> <span> git commit : </span> Sebelum melakukkan commit , kita harus config atau menjelaskan siapa diri
-            kita ke dalam Git dengan menggunakan perintah :
-          </p>
-
-          </p>
-          <p><span>git commit -m </span>"komentar untuk pemberian history"
-            untuk melakukan commit atau menentukan bahwa code yang sudah kita buat itu akan dimasukkan ke dalam
-            git
-          </p>
-        </section>
-      </article>
-
-    </div>
-  </div> -->
-
-
-
-  <!-- untuk bagian git merge -->
-  <!--   
-  <div class="gitBoxes">
-    <div class="container">
-
-      <article class="card">
-        <section class="cards-body">
-          <h2>Materi Git Merged!</h2>
-
-          <ul>
-            <h3>Fast Forward Merged</h3>
+      <div class="card-text section-a">
+        <div class="p-satu">
+          <h2 class="text-judul"># Basic Command</h2>
+          <ul class="ul-satu">
             <li>
-              <p>untuk melakukan merge pada branch, yaitu kita harus pindah terlebih dahulu ke dalam branch master
-                setelah pindah ke dalam branch master maka kita bisa melakukan git merge (nama_branch), ini untuk
-                melakukan fast forward </p>
+              <strong>cd (nama_folder) : </strong> change directory , untuk melakukan perpindahan atau memasuki
+              pada suatu folder yang di inginkan
             </li>
             <li>
-              <p>dan untuk menghapus branch nya karena sudah di merge sebelumnya,
-                kita bisa menggunakan perintah </p>
+              <strong>git init : </strong> untuk menginisialisasi, dengan cara membuat repositori pada file local
+              sehingga menjadi master
             </li>
             <li>
-              <p>git branch --merged : yaitu git akan secara otomatis menghapus branch yang sudah di merge tetapi
-                posisi kita harus berada di dalam branch master </p>
-            </li>
-
-            <li>
-              <p> git branch -d (nama_branch) : untuk menghapus branch setelah di merged </p>
-            </li>
-
-            <li>
-              <p> git branch -D (nama_branch) : menghapus branch secara paksa tanpa adanya merge dengan alasan file
-                yang dibuat itu tidak terpakai </p>
-            </li>
-
-          </ul>
-        </section>
-
-        <section class="cards-body">
-          <h3>Three-way Merged</h3>
-          <ul>
-            <li>
-              <p>ini adalah sebuah branch yang akan terjadi ketika, branch satu
-                dengan branch yang lain itu tidak memiliki hubungan satu sama lain
-              </p>
+              <strong>git status : </strong> untuk melihat status informasi pada git, apakah ada yang diperbaharui
+              atau tidak
             </li>
             <li>
-              <p>git branch --merged : yaitu git akan secara otomatis menghapus branch yang sudah di merge tetapi
-                posisi kita harus berada di dalam branch master </p>
+              <strong>untracked files : </strong> ada penambahan file baru yang harus kita pindahkan ke dalam
+              staging area
             </li>
             <li>
-              <p>git branch -d (nama_branch) : untuk menghapus branch setelah di merged </p>
+              <strong>git clone (url_git_folder) : </strong> untuk mengclone folder dari github, dan jika download
+              maka kita tidak terhubung ke remote
             </li>
-            <ul>
-        </section>
-
-        <section class="cards-body">
-          <h3>Conflict Merged</h3>
-          <ul>
             <li>
-              <p> jika pada satu file ada yang mengubah atau mengganti isi dari codes tersebut yang menyebabkan
-                error/conflict pada saat di commit, itu mengharus kan kita sebagai developer untuk memilih mana yang
-                akan kita gunakan.</p>
-
-              <p>
-                HEAD CURRENT : jika ada hal seperti ini, berarti ini menandakan file yang aktif yang sedang di
-                modifikasi nama_branch (incoming change) : jika ada hal seperti ini, berarti ini adalah file yang
-                sebelumnya sudah di modifikasi terlebih dahulu
-              </p>
-            </li>
-            <h3>Resolve conflict Merged</h3>
-            <li>
-              <p>
-                dengan cara memilih codes atau baris mana yang ingin kita pakai dan kita hapus, jika sudah maka save.
-                Dan masuk ke dalam git status untuk melihat status nya
-              </p>
+              <strong>git push -u origin master : </strong>-u untuk mengeset upstream, jadi ketika kedepannya ingin
+              push lagi tinggal mengetik git push saja
             </li>
           </ul>
-        </section>
 
-      </article>
-    </div>
-  </div> -->
+          <h2 class="text-judul"># Clone Folder in Github</h2>
+          <ul class="ul-satu">
+            <li>Open <a href="https://github.com/mhmmdva/perintah-git">github.com</a>, klik code dan copy link
+              tersebut
+              jika sudah, maka bisa membuka git bash terlebih dahulu dan melakukan paste
+              pada <b>git bash</b> dan panggil command <b>git clone</b> lalu tekan <span class="code">shift +
+                insert</span>
+              untuk melakukan paste link dan tunggu proses cloning hingga selesai.
+            </li>
+            <li>Jika proses cloning sudah selesai kita bisa menginisialisasi folder git yang sudah di cloning dengan
+              memasukkan command <b>git init</b>, maka folder tersebut akan langsung masuk ke branch master
+            </li>
+          </ul>
+
+          <h2 class="text-judul"># Create New Folder</h2>
+          <ul class="ul-satu">
+            <li>
+              Buat folder di dekstop bernama bebas <b>(ex : perintah-git)</b>
+            </li>
+            <li>Open <a href="https://github.com/mhmmdva?tab=repositories">Github</a> dan pilih <b> New
+                Repository</b>
+              isi
+              nama repository sesuai dengan nama folder yang sudah dibuat di dekstop (ex : perintah-git)
+            </li>
+            <li>Jadikan <b>public</b> jika seseorang ingin mengakses websites milik kita atau <b>private</b> jika web
+              tersebut hanya kita saja yang boleh mengaksesnya. Checklist <span class="code">README</span> dan
+              <span class="code">Create Repository</span>
+            </li>
+            <li>
+              Open <b>Git Bash Here</b> pada folder <b>(ex : perintah-git)</b>. Setelah itu kita bisa melakukan
+              <b>git
+                init</b> dan melakukan <b>git remote </b>
+            </li>
+          </ul>
+
+        </div>
+      </div> <!-- akhir dari p-satu -->
 
 
-  <!-- untuk bagian git branch -->
-  <!-- <div class="gitBoxes">
-  <div class="container">
-
-    <article class="card">
-      <section class="cards-body">
-        <h2>Materi Git Branch</h2>
-        <p><span>HEAD -> </span>
-          jika ada head di dalam graph pada git, itu menandakan bahwa branch tersebut lah yang sedang aktif
-          atau branch tersebut sedang kita gunakan</p>
-        <p><span>git branch (nama_branch) :</span>
-          untuk membuat branch baru pada git</p>
-        <p><span>git branch : </span>
-          untuk mengecek branch apa saja yang kita miliki</p>
-        <p><span>git branch (nama_branch) :</span>
-          untuk membuat branch baru pada git</p>
-      </section>
-    </article>
-
-  </div>
-</div> -->
+      <div class="card-text section-a">
+        <div class="p-dua">
+          <h4 class="text-judul-dua"># Git Checkout</h4>
+          <ul class="ul-dua">
+            <li>
+              git add (nama_file.html) :untuk memindahkan file yang akan di commit ke staging
+            </li>
+            <li>
+              git add . (tanda_titik) : untuk memindahkan file yang akan di commit ke staging area
+              secara langsung seperti ada penambahakan file baru atau perubahan codes area
+            </li>
+          </ul>
+        </div>
+      </div> <!-- akhir dari p-dua -->
 
 
-  <!-- git rebase -->
-  <!-- <div class="gitBoxes">
-    <div class="container">
-      <div class="card">
-        <div class="cards-body">
-          <h1>Perintah Rebase</h1>
-          <p>Rebase ini adalah suatu perintah untuk mensejajarkan branch lain dengan branch master,
-            dan fungsinya ini adalah untuk menghindari adanya Three-way atau conflict pada git
-            saat ingin melakukan push.
-          </p>
-          <p>jika ingin melakukan rebase ini, maka kita harus melihat terlebih dahulu pada graph
-            apakah branch yang sudah kita buat ingin kita lakukan rebase agar terjadinya fast-forward
-            untuk menghindari adanya conflict
-          </p>
-          <ul>
-            <li>git checkout (nama_branch_lain) </li>
-            <li>git rebase (nama_branch_master)</li>
-            <li>graph</li>
-            <li>git checkout (nama_branch_master)</li>
-            <li>git rebase (nama_branch_lain)</li>
-            <li>graph</li>
-            <li>git push -u origin master</li>
+      <div class="card-text section-a">
+        <div class="p-tiga">
+          <h4 class="text-judul-dua"># Git Log</h4>
+          <ul class="ul-tiga">
+            <li><strong> git log -- index.html : </strong> melihat history perubahan secara spesifik pada file
+              index.html
+              saja</li>
+            <li><strong> git log : melihat history pada commit</strong> git log -3 : melihat history
+              pada commit sebanyak 3x saja</li>
+            <li><strong> git log --all --decorate --oneline --graph : </strong> untuk melihat graph pada branch
+              dengan
+              commit hash dan ada commit massages</li>
+            <li><strong>alias graph="git log --all --decorate --oneline --graph"</strong> untuk membuat suatu alias
+            </li>
           </ul>
         </div>
       </div>
+      <!-- akhir dari baris p-tiga -->
+
+      <div class="card-text section-a">
+        <div class="p-empat">
+          <h4 class="text-judul-dua"># Git Checkout</h4>
+          <ul class="ul-empat">
+            <li><strong>git checkout 7767bsq -- index.html : </strong> mengembalikan file yang sudah kita hapus
+              dengan memasukkan code commit pertama (7767bsq) sebannyak 7 digit dan file yang sudah dikembalikan
+              akan
+              masuk ke dalam staging area.</li>
+            <li><strong>git checkout (nama_branch): </strong> untuk berpindah branch aktif bernama master ke branch
+              yang lain</li>
+            <li><strong>git checkout -b (nama_branch): </strong> membuat branch sekaligus untuk mengaktifkan branch
+              tersebut</li>
+          </ul>
+        </div>
+      </div>
+      <!-- akhir dari baris p-empat -->
+
+
+      <div class="card-text section-a">
+        <div class="p-lima">
+          <h4 class="text-judul-dua"># Git Remote</h4>
+          <ul class="ul-lima">
+            <li><strong>git remote : </strong> ketika mau ngeremote, maka remote harus punya nama dan secara otomatis
+              nama default dari remote adalah origin</li>
+            <li><strong>git remote -v </strong> melihat data lebih detail tidak hanya nama remote</li>
+            <li><strong>git remote add origin (url_git) : </strong> untuk membuat remote baru karena di awal membuat
+              folder pada dekstop bukan pada github dan pada bagian README.file itu jangan di checklist</li>
+          </ul>
+        </div>
+      </div>
+      <!-- akhir dari baris p-lima -->
+
+      <div class="card-text section-a">
+        <div class="p-enam">
+          <h4 class="text-judul-dua"># Git Branch</h4>
+          <ul class="ul-enam">
+            <li>
+              untuk melakukan merge pada branch, yaitu kita harus pindah terlebih dahulu ke dalam branch master
+              setelah pindah ke dalam branch master maka kita bisa melakukan git merge (nama_branch), ini untuk
+              melakukan fast forward
+            </li>
+            <li>
+              dan untuk menghapus branch nya karena sudah di merge sebelumnya,
+              kita bisa menggunakan perintah
+            </li>
+            <li>
+              git branch --merged : yaitu git akan secara otomatis menghapus branch yang sudah di merge tetapi
+              posisi kita harus berada di dalam branch master
+            </li>
+
+            <li>
+              git branch -d (nama_branch) : untuk menghapus branch setelah di merged
+            </li>
+
+            <li>
+              git branch -D (nama_branch) : menghapus branch secara paksa tanpa adanya merge dengan alasan file
+              yang dibuat itu tidak terpakai
+            </li>
+            <p>NOTES :
+              HEAD -> jika ada head di dalam graph pada git, itu menandakan bahwa branch tersebut lah yang sedang
+              aktif
+              atau branch tersebut sedang kita gunakan</p>
+            <li>git branch (nama_branch) :
+              untuk membuat branch baru pada git</li>
+            <li>git branch :
+              untuk mengecek branch apa saja yang kita miliki</li>
+            <li>git branch (nama_branch) :
+              untuk membuat branch baru pada git</li>
+          </ul>
+
+        </div>
+      </div>
+      <!-- akhir dari baris p-enam -->
+
+
+      <div class="card-text section-a">
+        <div class="p-tujuh">
+          <h4 class="text-judul-dua"># Git Commit</h4>
+          <ul class="ul-tujuh">
+            <li>git config --global user.name "mhmmdva"</li>
+            <li>git config --global user.email "vallenleyss@gmail.com"</li>
+            <li> git commit -a -m (-am) "komentar untuk pemberian history" </li>
+            jika suatu file sudah modified pada saat pengecekan status, maka kita bisa langsung
+            memasukkkan perintah seperti itu untuk mempercepat pekerjaan dengan artian -a untuk menambahkan
+            dan -m untuk commit
+            <li> git commit :Sebelum melakukkan commit , kita harus config atau menjelaskan siapa diri
+              kita ke dalam Git dengan menggunakan perintah :
+            </li>
+            <li>git commit -m "komentar untuk pemberian history"
+              untuk melakukan commit atau menentukan bahwa code yang sudah kita buat itu akan dimasukkan ke dalam
+              git
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- akhir dari baris p-tujuh -->
+
+
+      <div class="card-text section-a">
+        <div class="p-delapan">
+          <h4 class="text-judul-dua"># Git Merge</h4>
+          <ul class="ul-delapan">
+            <h3>Three-way Merged</h3>
+            <li>
+              ini adalah sebuah branch yang akan terjadi ketika, branch satu
+              dengan branch yang lain itu tidak memiliki hubungan satu sama lain
+
+            </li>
+            <li>
+              git branch --merged : yaitu git akan secara otomatis menghapus branch yang sudah di merge tetapi
+              posisi kita harus berada di dalam branch master
+            </li>
+            <li>
+              git branch -d (nama_branch) : untuk menghapus branch setelah di merged
+            </li>
+            <h3>Conflict Merged</h3>
+
+
+            <ul>
+              <li>
+                jika pada satu file ada yang mengubah atau mengganti isi dari codes tersebut yang menyebabkan
+                error/conflict pada saat di commit, itu mengharus kan kita sebagai developer untuk memilih mana
+                yang
+                akan kita gunakan.
+                <br>
+                HEAD CURRENT : jika ada hal seperti ini, berarti ini menandakan file yang aktif yang sedang di
+                modifikasi nama_branch (incoming change) : jika ada hal seperti ini, berarti ini adalah file yang
+                sebelumnya sudah di modifikasi terlebih dahulu
+              </li>
+              <h3>Resolve conflict Merged</h3>
+              <li>
+                dengan cara memilih codes atau baris mana yang ingin kita pakai dan kita hapus, jika sudah maka
+                save.
+                Dan masuk ke dalam git status untuk melihat status nya
+              </li>
+            </ul>
+            <!-- akhir dari baris ul kedua -->
+          </ul>
+          <!-- akhir dari baris ul pertama -->
+        </div>
+      </div>
+      <!-- akhir dari baris p-delapan -->
+
+
+      <div class="card-text section-a">
+        <div class="p-sembilan">
+          <h4 class="text-judul-dua"># Git Rebase</h4>
+          <ul class="ul-sembilan">
+            <li>Rebase ini adalah suatu perintah untuk mensejajarkan branch lain dengan branch master,
+              dan fungsinya ini adalah untuk menghindari adanya Three-way atau conflict pada git
+              saat ingin melakukan push.
+            </li>
+            <li>jika ingin melakukan rebase ini, maka kita harus melihat terlebih dahulu pada graph
+              apakah branch yang sudah kita buat ingin kita lakukan rebase agar terjadinya fast-forward
+              untuk menghindari adanya conflict
+            </li>
+            <ul>
+              <li>git checkout (nama_branch_lain) </li>
+              <li>git rebase (nama_branch_master)</li>
+              <li>graph</li>
+              <li>git checkout (nama_branch_master)</li>
+              <li>git rebase (nama_branch_lain)</li>
+              <li>graph</li>
+              <li>git push -u origin master</li>
+            </ul>
+            <!-- akhir dari baris ul kedua -->
+          </ul>
+          <!-- akhir dari baris ul pertama -->
+        </div>
+      </div>
+      <!-- akhir dari baris p-sembilan -->
+
     </div>
-  </div> -->
+    <!-- akhir dari card-body -->
+
+
+  </div>
+  <!-- container -->
 
 
 
-
-  <!-- Footer -->
-  <footer>
+  <footer class="mt-5">
     <div class="container">
-
       <div class="row-column">
 
         <div class="footer-logo">
           <img class="footer-img" src="./img/git.png" alt="">
           <h1>PerintahGit</h1>
         </div>
+        <!-- footer-logo -->
 
         <div class="footer-column">
-
           <div class="footer-info">
-
             <ul class="social-media">
               <li class="social-items"><a href=""><i class="bi bi-github"></i></a></li>
               <li class="social-items"><a href=""><i class="bi bi-instagram"></i></a></li>
               <li class="social-items"><a href=""><i class="bi bi-linkedin"></i></a></li>
             </ul>
           </div>
+          <!-- footer-info -->
+
 
           <div class="categories-flex">
             <h6 class="text-footer">Categories</h6>
@@ -377,6 +406,7 @@
               <li class="mb-2"><a href="#">About</a></li>
             </ul>
           </div>
+          <!-- categories-flex -->
 
           <div class="categories-flex">
             <h6 class="text-footer">Rules of Git</h6>
@@ -388,25 +418,23 @@
             </ul>
           </div>
 
-
-
         </div>
+        <!-- footer-column -->
 
-
-
-      </div> <!-- ROW COLUMN-->
-      <!-- Copyrights -->
+      </div>
+      <!-- row-column -->
 
       <div class="copyrights">
         <div class="d-flex align-content-center justify-content-center copyText">
           <p class="text-muted mb-2 py-2">© 2022 PerintahGit.</p>
         </div>
       </div>
+      <!-- copyrights -->
+
 
     </div>
+    <!-- container-->
   </footer>
-
-
 
 
 

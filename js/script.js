@@ -9,38 +9,45 @@ const linkAktif8 = document.querySelector('#sectionA .a-delapan')
 const linkAktif9 = document.querySelector('#sectionA .a-sembilan')
 
 // const p1 = document.querySelector('#sectionA .p-satu .ul-satu')
-const p2 = document.querySelector('#sectionA .p-dua .ul-dua')
-const p3 = document.querySelector('#sectionA .p-tiga .ul-tiga')
-const p4 = document.querySelector('#sectionA .p-empat .ul-empat')
-const p5 = document.querySelector('#sectionA .p-lima .ul-lima')
-const p6 = document.querySelector('#sectionA .p-enam .ul-enam')
-const p7 = document.querySelector('#sectionA .p-tujuh .ul-tujuh')
-const p8 = document.querySelector('#sectionA .p-delapan .ul-delapan')
-const p9 = document.querySelector('#sectionA .p-sembilan .ul-sembilan')
-
-
+const p2 = document.querySelector('#sectionA .p-dua')
 linkAktif2.addEventListener('click', function () {
-   p2.classList.toggle('ul-dua');
+   p2.classList.toggle('p-dua');
 });
+
+const p3 = document.querySelector('#sectionA .p-tiga')
 linkAktif3.addEventListener('click', function () {
-   p3.classList.toggle('ul-tiga');
+   p3.classList.toggle('p-tiga');
 });
+
+const p4 = document.querySelector('#sectionA .p-empat')
 linkAktif4.addEventListener('click', function () {
-   p4.classList.toggle('ul-empat');
+   p4.classList.toggle('p-empat');
 });
+
+
+const p5 = document.querySelector('#sectionA .p-lima')
 linkAktif5.addEventListener('click', function () {
-   p5.classList.toggle('ul-lima');
+   p5.classList.toggle('p-lima');
 });
+
+
+const p6 = document.querySelector('#sectionA .p-enam')
 linkAktif6.addEventListener('click', function () {
-   p6.classList.toggle('ul-enam');
+   p6.classList.toggle('p-enam');
 });
+
+const p7 = document.querySelector('#sectionA .p-tujuh')
 linkAktif7.addEventListener('click', function () {
-   p7.classList.toggle('ul-tujuh');
+   p7.classList.toggle('p-tujuh');
 });
+
+const p8 = document.querySelector('#sectionA .p-delapan')
 linkAktif8.addEventListener('click', function () {
-   p8.classList.toggle('ul-delapan');
+   p8.classList.toggle('p-delapan');
 });
+
+const p9 = document.querySelector('#sectionA .p-sembilan')
 linkAktif9.addEventListener('click', function () {
-   p9.classList.toggle('ul-sembilan');
+   p9.classList.toggle('p-sembilan');
 });
 
